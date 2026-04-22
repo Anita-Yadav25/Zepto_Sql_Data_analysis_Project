@@ -1,4 +1,20 @@
-# Zepto_Sql_Data_analysis_Project
+🛒 Zepto SQL Data Analysis Project
+
+This project analyzes an e-commerce dataset (Zepto) using SQL to uncover insights related to pricing, inventory, and demand patterns.
+
+📌 Project Overview
 
 
-This is a complete, real-world data analyst portfolio project based on an e-commerce inventory dataset scraped from Zepto — one of India’s fastest-growing quick-commerce startups. This project simulates real analyst workflows, from raw data exploration to business-focused data analysis.
+📊 Dataset
+
+The dataset contains product-level information such as:
+
+Category
+Product Name
+MRP
+Discount Percentage
+Discounted Selling Price
+Available Quantity
+Stock Status
+Product Weight
+Quantity
