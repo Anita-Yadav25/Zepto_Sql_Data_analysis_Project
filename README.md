@@ -1,51 +1,110 @@
-🛒 Zepto SQL Data Analysis Project
+# 🛒 Zepto E-commerce Data Analysis (SQL Project)
 
-This project analyzes an e-commerce dataset (Zepto) using SQL to uncover insights related to pricing, inventory, and demand patterns.
+---
 
-📌 Project Overview
+## 🚀 Project Overview
 
-Performed end-to-end analysis on a Zepto-like e-commerce dataset to uncover revenue leakage, pricing inefficiencies, and inventory gaps using SQL.
+This project analyzes a Zepto-like e-commerce dataset using SQL to uncover **revenue leakage, pricing inefficiencies, and inventory gaps**.
 
-The goal was to simulate real-world business scenarios and generate actionable insights that directly impact revenue and operations.
+The objective was to simulate real-world business scenarios and generate **data-driven insights that improve revenue, pricing strategy, and inventory management**.
 
-🔧 Key Work Done
+---
 
-Designed and structured a real-world e-commerce inventory database from raw CSV data
-Performed Exploratory Data Analysis (EDA) to evaluate product distribution, category trends, and stock availability
-Cleaned and transformed messy data by:
-Handling missing/null values
-Removing inconsistent entries
-Converting pricing from paise to rupees for accurate analysis
-Developed 15+ business-focused SQL queries to analyze:
-Pricing strategies
-Discount patterns
-Inventory distribution
-Stock availability
-Revenue opportunities
+## 📊 Dataset Overview
 
-📊 Dataset Overview
+* 📦 Total Records: **3,732 products**
+* Categories: Fruits & Vegetables, Cooking Essentials, Snacks, Beverages, etc.
 
-The dataset contains product-level information such as:
+### 🧾 Columns Description:
 
-🧾 Columns:
+* **sku_id** → Unique identifier for each product (Primary Key)
+* **name** → Product name
+* **category** → Product category
+* **mrp** → Maximum Retail Price (converted from paise to ₹)
+* **discountPercent** → Discount applied
+* **discountedSellingPrice** → Final selling price
+* **availableQuantity** → Current inventory level
+* **weightInGms** → Product weight
+* **outOfStock** → Stock status (1 = Out of stock, 0 = In stock)
+* **quantity** → Units sold (used as demand proxy)
 
-sku_id: Unique identifier for each product entry (Synthetic Primary Key)
+---
 
-name: Product name as it appears on the app
+## 🧹 Data Cleaning & Preparation
 
-category: Product category like Fruits, Snacks, Beverages, etc.
+Performed extensive data preprocessing to ensure analysis accuracy:
 
-mrp: Maximum Retail Price (originally in paise, converted to ₹)
+* Handled missing/null values
+* Fixed incorrect data types (BOOLEAN, DECIMAL, INT)
+* Removed inconsistent and invalid entries
+* Converted pricing from **paise to rupees**
+* Ensured logical consistency (Selling Price ≤ MRP)
 
-discountPercent: Discount applied on MRP
+📌 Result: Created a **clean, analysis-ready dataset**
 
-discountedSellingPrice: Final price after discount (also converted to ₹)
+---
 
-availableQuantity: Units available in inventory
+## 🔧 Key Analysis Performed
 
-weightInGms: Product weight in grams
+* Analyzed **pricing and discount strategies**
+* Identified **high-value products that are out of stock**
+* Calculated **category-wise revenue contribution**
+* Evaluated **inventory distribution and stock availability**
+* Performed **value-for-money analysis (price per gram)**
+* Segmented products based on **weight categories**
+* Measured **inventory load using total weight per category**
 
-outOfStock: Boolean flag indicating stock availability
+---
 
-quantity: Number of units per package (mixed with grams for loose produce)
+## 📈 Key Insights
 
+* 🚨 High-demand products frequently go out of stock → **revenue leakage**
+* 💰 A small number of categories contribute to the majority of revenue (Pareto trend)
+* 🏷️ Some categories rely heavily on discounts → **margin risk**
+* ⚖️ Significant variation in price per gram → **pricing inconsistency**
+* 📦 Inventory distribution is uneven → **operational inefficiency**
+
+---
+
+## 💡 Business Impact
+
+* Identified opportunities to **recover lost revenue through better stock management**
+* Highlighted need for **optimized pricing and discount strategies**
+* Enabled **data-driven decision-making for inventory planning**
+* Improved understanding of **customer demand patterns**
+
+---
+
+## 📌 Business Recommendations
+
+* Improve demand forecasting to reduce stockouts
+* Prioritize restocking of high-demand, high-value products
+* Optimize discount strategies to protect profit margins
+* Align inventory distribution with demand trends
+* Standardize pricing across similar products
+
+---
+
+## 🛠️ Tools & Skills Used
+
+* SQL (MySQL)
+* Data Cleaning & Transformation
+* Exploratory Data Analysis (EDA)
+* Business Insight Generation
+
+---
+
+## 💼 About This Project
+
+This project demonstrates my ability to:
+
+✔ Work with real-world messy datasets
+✔ Perform end-to-end data analysis using SQL
+✔ Translate data into actionable business insights
+✔ Think from a business and analytical perspective
+
+---
+
+⭐ If you found this project interesting, feel free to connect or share feedback!
+
+---
