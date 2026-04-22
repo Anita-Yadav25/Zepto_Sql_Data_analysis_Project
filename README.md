@@ -10,11 +10,19 @@ This project analyzes an e-commerce dataset (Zepto) using SQL to uncover insight
 The dataset contains product-level information such as:
 
 Category
+
 Product Name
+
 MRP
+
 Discount Percentage
+
 Discounted Selling Price
+
 Available Quantity
+
 Stock Status
+
 Product Weight
+
 Quantity
