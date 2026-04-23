@@ -47,6 +47,7 @@ Identify:
 -Total Records: 3,732 products
 
 **🧾 Key Columns:**
+
 -sku_id – Unique product ID
 
 -name – Product name
@@ -78,6 +79,7 @@ Identify:
 -Ensured Selling Price ≤ MRP
 
 **🔧 Key Analysis Performed**
+
 -Pricing and discount strategy analysis
 
 -High-value out-of-stock product identification
