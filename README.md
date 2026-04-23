@@ -1,110 +1,93 @@
-# 🛒 Zepto E-commerce Data Analysis (SQL Project)
+🛒 **Zepto-Style E-commerce SQL Analysis**
 
----
+This project simulates real-world e-commerce problem-solving using **SQL**, focusing on **revenue optimization, pricing strategy, and inventory efficiency.**
 
-## 🚀 Project Overview
+⭐ Project Summary
 
-This project analyzes a Zepto-like e-commerce dataset using SQL to uncover **revenue leakage, pricing inefficiencies, and inventory gaps**.
+**Situation**
 
-The objective was to simulate real-world business scenarios and generate **data-driven insights that improve revenue, pricing strategy, and inventory management**.
+Analyzed a Zepto-like dataset containing 3,732 products with real-world data issues such as **missing values, inconsistent pricing, and duplicate records.**
 
----
+**Task**
 
-## 📊 Dataset Overview
+Identify:
 
-* 📦 Total Records: **3,732 products**
-* Categories: Fruits & Vegetables, Cooking Essentials, Snacks, Beverages, etc.
+-Revenue leakage due to discounting
+-Pricing inefficiencies across categories
+-Inventory gaps affecting sales
 
-### 🧾 Columns Description:
+**Action**
 
-* **sku_id** → Unique identifier for each product (Primary Key)
-* **name** → Product name
-* **category** → Product category
-* **mrp** → Maximum Retail Price (converted from paise to ₹)
-* **discountPercent** → Discount applied
-* **discountedSellingPrice** → Final selling price
-* **availableQuantity** → Current inventory level
-* **weightInGms** → Product weight
-* **outOfStock** → Stock status (1 = Out of stock, 0 = In stock)
-* **quantity** → Units sold (used as demand proxy)
+-Cleaned and transformed data (handled nulls, fixed data types, removed inconsistencies)
+-Converted pricing from paise to rupees and ensured logical consistency
+-Performed SQL analysis on pricing, discounts, and stock availability
+-Identified high-demand products going out of stock
+-Analyzed category-wise revenue contribution and pricing patterns
+-Conducted value-for-money analysis (price per gram)
 
----
+**Result**
 
-## 🧹 Data Cleaning & Preparation
+-Identified **~20%** products with high discounting, indicating potential revenue leakage
+-Observed **Pareto trend: top categories contribute majority of revenue (~60–70%)**
+-Detected frequent stock-outs in high-demand products, leading to missed sales
+-Highlighted pricing inconsistencies across similar products
 
-Performed extensive data preprocessing to ensure analysis accuracy:
+**📊 Dataset Overview**
 
-* Handled missing/null values
-* Fixed incorrect data types (BOOLEAN, DECIMAL, INT)
-* Removed inconsistent and invalid entries
-* Converted pricing from **paise to rupees**
-* Ensured logical consistency (Selling Price ≤ MRP)
+-Total Records: 3,732 products
 
-📌 Result: Created a **clean, analysis-ready dataset**
+**🧾 Key Columns:**
+-sku_id – Unique product ID
+-name – Product name
+-category – Product category
+-mrp – Maximum Retail Price
+-discountPercent – Discount applied
+-discountedSellingPrice – Final price
+-availableQuantity – Inventory level
+-outOfStock – Stock status
+-quantity – Units sold
 
----
+**🧹 Data Cleaning & Preparation**
 
-## 🔧 Key Analysis Performed
+-Handled missing/null values
+-Fixed incorrect data types
+-Removed inconsistent records
+-Converted pricing units
+-Ensured Selling Price ≤ MRP
 
-* Analyzed **pricing and discount strategies**
-* Identified **high-value products that are out of stock**
-* Calculated **category-wise revenue contribution**
-* Evaluated **inventory distribution and stock availability**
-* Performed **value-for-money analysis (price per gram)**
-* Segmented products based on **weight categories**
-* Measured **inventory load using total weight per category**
+**🔧 Key Analysis Performed**
+-Pricing and discount strategy analysis
+-High-value out-of-stock product identification
+-Category-wise revenue analysis
+-Inventory distribution analysis
+-Price-per-gram (value analysis)
+-Product segmentation by weight
 
----
+**📈 Key Insights**
 
-## 📈 Key Insights
+🚨 High-demand products frequently go out of stock → revenue leakage
+💰 Few categories dominate revenue (Pareto principle)
+🏷️ Heavy discounting in some categories → margin risk
+⚖️ Price inconsistency across similar products
+📦 Uneven inventory distribution
 
-* 🚨 High-demand products frequently go out of stock → **revenue leakage**
-* 💰 A small number of categories contribute to the majority of revenue (Pareto trend)
-* 🏷️ Some categories rely heavily on discounts → **margin risk**
-* ⚖️ Significant variation in price per gram → **pricing inconsistency**
-* 📦 Inventory distribution is uneven → **operational inefficiency**
+**📌 Business Recommendations**
 
----
+-Improve demand forecasting
+-Prioritize high-demand product restocking
+-Optimize discount strategies
+-Align inventory with demand
+-Standardize pricing
 
-## 💡 Business Impact
+**🛠️ Tools & Skills**
 
-* Identified opportunities to **recover lost revenue through better stock management**
-* Highlighted need for **optimized pricing and discount strategies**
-* Enabled **data-driven decision-making for inventory planning**
-* Improved understanding of **customer demand patterns**
+SQL (MySQL)
+Data Cleaning
+Exploratory Data Analysis
+Business Insight Generation
 
----
 
-## 📌 Business Recommendations
+⭐ If you found this project insightful, feel free to star the repository!
 
-* Improve demand forecasting to reduce stockouts
-* Prioritize restocking of high-demand, high-value products
-* Optimize discount strategies to protect profit margins
-* Align inventory distribution with demand trends
-* Standardize pricing across similar products
-
----
-
-## 🛠️ Tools & Skills Used
-
-* SQL (MySQL)
-* Data Cleaning & Transformation
-* Exploratory Data Analysis (EDA)
-* Business Insight Generation
-
----
-
-## 💼 About This Project
-
-This project demonstrates my ability to:
-
-✔ Work with real-world messy datasets
-✔ Perform end-to-end data analysis using SQL
-✔ Translate data into actionable business insights
-✔ Think from a business and analytical perspective
-
----
-
-⭐ If you found this project interesting, feel free to connect or share feedback!
-
----
+**📩 I’m currently transitioning into a Data Analyst role and actively looking for opportunities. 
+I’d love to connect, collaborate, or discuss data-driven problem solving.**
