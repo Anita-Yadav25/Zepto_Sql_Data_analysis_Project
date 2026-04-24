@@ -1,4 +1,4 @@
-🛒 **Zepto-Style E-commerce SQL Analysis**
+🛒 **Zepto Sales Analysis**
 
 This project simulates real-world e-commerce problem-solving using **SQL**, focusing on **revenue optimization, pricing strategy, and inventory efficiency.**
 
